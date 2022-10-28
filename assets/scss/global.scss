@@ -1,0 +1,601 @@
+/*  Eric Meyer's Reset ----------------------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+/* Global Typography-----------------------*/
+html {
+  -webkit-text-size-adjust: none;
+}
+body {
+  line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+  color: #262729;
+  background-color: $body-color;
+  @include fontsize(16px);
+}
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/*  Global Headings ---------------------------------------------*/
+h1 {
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+h2 {
+  font-weight: 200;
+  margin-bottom: 15px;
+  @include fontsize(25px);
+  color: $color-black;
+}
+h3 {
+  font-weight: $fw-medium;
+  @include fontsize(14px);
+}
+h4 {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  @include fontsize(14px);
+}
+h5 {
+  color: #939292;
+  margin-bottom: 10px;
+}
+h6 {
+  margin-bottom: 10px;
+}
+@media all and (max-width: 768px) {
+  h1, h2 {
+    @include fontsize(25px);
+  }
+}
+@media all and (min-width: 1200px) {
+  h1 {
+    @include fontsize(42px);
+    font-weight: $fw-light;
+  }
+  h2 {
+    @include fontsize(42px);
+    font-weight: $fw-light;
+  }
+  h3 {
+    @include fontsize(19px);
+    font-weight: $fw-medium;
+  }
+  h4 {
+    @include fontsize(16px);
+  }
+}
+/* General Text Formatting ----------------------*/
+cite,
+q,
+var,
+dfn {
+  font-style: italic;
+}
+a {
+  @include transition(all 0.5s);
+  color: $color-black;
+  text-decoration: none;
+  &:hover {
+    color: $pink;
+  }
+}
+p {
+  line-height: 1.25;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+i {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+blockquote {
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+/* Clear Floated Elements by use Clearfix class-----------------------*/
+.clearfix:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/*  Global Button Styles -----------------*/
+.btn {
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  border: 1px solid $text-color;
+  @include fontsize(15px);
+  background-color: $text-color;
+  color: $golden;
+  font-weight: 400;
+  border-radius: 0;
+  padding: 8px 10px;
+  transition: all 0.5s;
+  min-width: 150px;
+  @include fontsize(14px);
+  &:hover {
+    background-color: transparent;
+    color: $golden;
+    border-color: $golden;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+}
+.btn.two {
+  background-color: $golden;
+  border: 1px solid $golden;
+  @include fontsize(14px);
+  color: $text-color;
+  &:hover {
+    color: $golden;
+    border-color: $golden;
+    background-color: $text-color;
+  }
+}
+.abs-corner {
+  @include absolute($top: -16px, $right: -85px);
+  background-color: $golden;
+  transform: rotate(45deg);
+  text-align: center;
+  padding: 34px 57px 1px;
+  .icon-calander {
+    background-position: -139px -2px;
+    background-size: 450px 450px;
+    width: 29px;
+    height: 29px;
+    transform: rotate(-45deg);
+  }
+  .icon-call {
+    background-position: -176px -4px;
+    background-size: 450px 450px;
+    width: 27px;
+    height: 32px;
+    transform: rotate(-45deg);
+  }
+  h4 {
+    @include fontsize(16px);
+    font-weight: $fw-light;
+  }
+}
+/* Global Form Elements -------------------------*/
+.form-input {
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0 14px;
+  width: 100%;
+  background: none;
+  height: 47px;
+}
+
+form {
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+
+    opacity: 1;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+
+    opacity: 1;
+  }
+}
+.form-fields {
+  margin-bottom: 16px;
+}
+.error-fields {
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+
+    opacity: 1;
+  }
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+
+    opacity: 1;
+  }
+  :-ms-input-placeholder {
+    /* IE 10+ */
+
+    opacity: 1;
+  }
+  :-moz-placeholder {
+    /* Firefox 18- */
+
+    opacity: 1;
+  }
+}
+.error {
+  margin-bottom: 16px;
+  @media all and (min-width: 768px) {
+    width: 48.5%;
+  }
+  li {
+    padding: 2px 13px;
+    margin-bottom: 10px;
+  }
+}
+textarea.form-input {
+  resize: none;
+  padding: 14px 13px;
+  height: 182px;
+}
+button {
+  margin: 0;
+  &:focus {
+    outline: none;
+  }
+}
+.slick-dots {
+  @include absolute($bottom: 30px, $right: 0, $left: 0);
+  margin: 0 auto;
+  width: 48px;
+  display: flex;
+  font-size: 0;
+  button {
+    border: none;
+    height: 11px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: $text-color;
+  }
+  li {
+    margin-right: 6px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .slick-active {
+    button {
+      background-color: $golden;
+    }
+  }
+}
+.neu-tag {
+  height: 84px;
+  width: 84px;
+  border: 2px solid $golden;
+  border-radius: 50%;
+  @include absolute($right: 21px, $top: 25px);
+  text-align: center;
+  padding-top: 22px;
+  h4 {
+    color: $white;
+    @include fontsize(27px);
+    font-weight: $fw-light !important;
+    transform: rotate(-15deg);
+  }
+}
+.slick-prev {
+  @include absolute($top: 6%, $left: 0);
+  height: 48px;
+  width: 22px;
+  border: none;
+  text-indent: -9999px;
+  background: url(../images/sprite.png) 0 0 no-repeat;
+  background-position: -244px -5px;
+  background-size: 450px 450px;
+  width: 32px;
+  height: 49px;
+  z-index: 1;
+}
+.slick-next {
+  @include absolute($top: 6%, $right: 0);
+  height: 48px;
+  width: 22px;
+  border: none;
+  text-indent: -9999px;
+  background: url(../images/sprite.png) 0 0 no-repeat;
+  background-position: -282px 0;
+  background-size: 450px 450px;
+  width: 26px;
+  height: 51px;
+}
+
+/* Show the checkmark when checked */
+.check-wrap input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $color-black;
+  opacity: 1;
+  text-transform: capitalize;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $color-black;
+  opacity: 1;
+  text-transform: capitalize;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $color-black;
+  opacity: 1;
+  text-transform: capitalize;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $color-black;
+  opacity: 1;
+  text-transform: capitalize;
+}
+/*  Global Sprite Icons  -------------------------*/
+[class^="icon-"],
+[class="icon-"] {
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+/*  Global Sprite Icons -------------------------*/
+/* Global classes------------------ */
+/*
+ Flex
+-------------------------*/
+@mixin d-flex() {
+  display: -ms-flexbox;
+  display: flex;
+}
+@mixin justify-start() {
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+@mixin justify-end() {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+@mixin justify-center() {
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+@mixin justify-between() {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@mixin justify-around() {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+@mixin justify-around() {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+@mixin align-start() {
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+@mixin align-end() {
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+@mixin align-center() {
+  -ms-flex-align: center;
+  align-items: center;
+}
+@mixin align-between() {
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+@mixin flex-wrap() {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@mixin flex-dir($direction) {
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+@mixin abs($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-control,
+textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid $light-black;
+  padding: 10px 22px;
+  font-weight: 300;
+  outline: 0;
+  background-color: transparent;
+  border-radius: 0;
+  color: $gray;
+  font-family: "Source Sans Pro";
+  font-weight: normal;
+  font-style: normal;
+  &:focus {
+    border: 0;
+    border-bottom: 2px solid $red;
+    box-shadow: none;
+    background-color: transparent;
+    color: $gray;
+  }
+}
+textarea {
+  resize: none;
+  margin-bottom: 20px;
+  border: 2px solid $light-black;
+  font-family: "Source Sans Pro";
+  font-weight: normal;
+  font-style: normal;
+  &::placeholder {
+    color: $gray;
+  }
+  &:focus {
+    border: 2px solid $light-black;
+  }
+  li {
+    list-style: none;
+  }
+}
+body {
+  background: url(../images/index.jpg) center top;
+  height: 5000px;
+}
+.wrapper {
+  opacity: 0.8;
+}

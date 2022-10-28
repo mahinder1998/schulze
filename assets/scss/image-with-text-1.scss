@@ -1,0 +1,28 @@
+.image-with-text-1{
+    .map-block{
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .image-with-text-1{
+        padding-bottom: 32px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .image-with-text-1{
+        .map-content{
+            padding: 9px 60px 0 57px;
+            h2{
+                margin-bottom: 22px;
+            }
+            p{
+                line-height: 1.2;
+                margin-bottom: 16px;
+            }
+            .btn{
+                margin-top: 6px;
+            }
+        }
+    }
+}

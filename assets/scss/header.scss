@@ -1,0 +1,184 @@
+.primary-header {
+  background-color: #ebeaef;
+  padding: 12px 0 11px;
+  .container {
+    @include fontsize(13px);
+  }
+  .icon-facebook {
+    background-position: -4px -3px;
+    background-size: 450px 450px;
+    width: 9px;
+    height: 15px;
+  }
+  .icon-instagram {
+    background-position: -17px -2px;
+    background-size: 450px 450px;
+    width: 16px;
+    height: 15px;
+  }
+  .icon-call {
+    background-position: -38px -2px;
+    background-size: 450px 450px;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+  }
+  .icon-email {
+    background-position: -57px -3px;
+    background-size: 450px 450px;
+    width: 18px;
+    height: 13px;
+    margin-right: 13px;
+  }
+  .left-block {
+    display: flex;
+    width: 168px;
+    margin: 0 auto 8px;
+  }
+  .social-listing {
+    display: flex;
+    li {
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+  }
+  .social-title {
+    display: block;
+    margin-right: 10px;
+  }
+  .contact-listing {
+    li {
+      text-align: center;
+      &:first-child {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+.secondary-header {
+  padding: 10px 0;
+  position: relative;
+  background-color: #262729;
+  .brand-logo {
+    width: 100px;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar {
+    @include absolute($top: 100%, $left: 0);
+    max-width: 400px;
+    z-index: 1;
+    a{
+      &:hover{
+        color: $golden;
+      }
+    }
+  }
+  .hamburger {
+    background-color: transparent;
+    border: none;
+    .bar {
+      height: 3px;
+      width: 30px;
+      background-color: #fff;
+      margin-bottom: 5px;
+      display: block;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// media queries
+@media screen and (min-width: 768px) {
+  .primary-header {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-listing {
+      display: flex;
+      li {
+        &:first-child {
+          margin-bottom: 0;
+          margin-right: 20px;
+        }
+      }
+    }
+    .left-block {
+      margin: 0;
+    }
+  }
+  .secondary-header {
+    padding: 20px 0 120px;
+    .brand-logo {
+      width: 100px;
+      margin: 0 auto 13px;
+    }
+    .container {
+      display: block;
+    }
+    .hamburger {
+      display: none;
+    }
+    .navbar {
+      position: static;
+      max-width: 738px;
+      margin: 0 auto;
+      .menu {
+        display: flex;
+        width: 100%;
+      }
+      li {
+        margin-right: 23px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      a {
+        color: #fff;
+        @include fontsize(15px);
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 9px;
+          right: -12px;
+          height: 3px;
+          width: 3px;
+          background-color: #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .secondary-header {
+    padding: 28px 0 209px;
+    .brand-logo {
+      width: 142px;
+    }
+    .navbar {
+      max-width: 950px;
+      li {
+        margin-right: 50px;
+      }
+      a {
+        &::after {
+          right: -26px;
+          top: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.footer{
+    padding: 25px 0;
+}
+.slider-three{
+    padding: 0 25px;
+    .slick-arrow{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slick-track{
+        display: flex;
+        align-items: center;
+    }
+}
