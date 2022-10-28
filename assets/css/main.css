@@ -10723,12 +10723,7 @@ textarea li {
 }
 
 body {
-  background: url(../images/index.jpg) center top;
   height: 5000px;
-}
-
-.wrapper {
-  opacity: 0.8;
 }
 
 .primary-header {
