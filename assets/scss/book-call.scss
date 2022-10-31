@@ -2,17 +2,13 @@
   .private-shopping {
     background: url(../images/book-call-1.png);
     color: #fff;
-    padding-top: 75px;
     padding-left: 0 !important;
     padding-right: 0 !important;
     margin-bottom: 20px;
-    min-height: 410px;
+    min-height: 388px;
     position: relative;
     overflow: hidden;
     .image-wrapper {
-      width: 150px;
-      margin-bottom: 55px;
-      margin-left: 20px;
       img {
         width: 100%;
         display: block;
@@ -56,8 +52,8 @@
     font-weight: $fw-light;
   }
   .icon-call {
-    background-position: -206px -4px;
-    background-size: 450px 450px;
+    background-position: -210px -8px;
+    background-size: 300px 300px;
     width: 27px;
     height: 32px;
     margin-right: 20px;
@@ -68,7 +64,7 @@
   .book-and-call-1 {
     margin-bottom: 59px;
     .private-shopping {
-      min-height: 450px;
+      min-height: 412px;
       margin-bottom: 0;
     }
   }
@@ -77,11 +73,6 @@
   .book-and-call-1 {
     .private-shopping {
         min-height: 530px;
-      .image-wrapper {
-        width: 354px;
-        margin-bottom: 55px;
-        margin-left: 63px;
-      }
     }
     .glass-img {
       width: 111px;

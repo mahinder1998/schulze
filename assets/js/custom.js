@@ -53,7 +53,7 @@ $(window).on('load', function () {
         infinite: true,
         responsive: [
             {
-                breakpoint: 768,
+                breakpoint: 992,
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 1

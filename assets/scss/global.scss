@@ -164,7 +164,8 @@ h6 {
   margin-bottom: 10px;
 }
 @media all and (max-width: 768px) {
-  h1, h2 {
+  h1,
+  h2 {
     @include fontsize(25px);
   }
 }
@@ -197,7 +198,7 @@ a {
   color: $color-black;
   text-decoration: none;
   &:hover {
-    color: $pink;
+    color: $golden;
   }
 }
 p {
@@ -257,8 +258,8 @@ blockquote {
   min-width: 150px;
   @include fontsize(14px);
   &:hover {
-    background-color: transparent;
-    color: $golden;
+    background-color: $golden;
+    color: $text-color;
     border-color: $golden;
   }
   &:focus {
@@ -283,15 +284,15 @@ blockquote {
   text-align: center;
   padding: 34px 57px 1px;
   .icon-calander {
-    background-position: -139px -2px;
-    background-size: 450px 450px;
+    background-position: -2px -20px;
+    background-size: 300px 300px;
     width: 29px;
     height: 29px;
     transform: rotate(-45deg);
   }
   .icon-call {
-    background-position: -176px -4px;
-    background-size: 450px 450px;
+    background-position: -36px -20px;
+    background-size: 300px 300px;
     width: 27px;
     height: 32px;
     transform: rotate(-45deg);
@@ -412,6 +413,7 @@ button {
   @include absolute($right: 21px, $top: 25px);
   text-align: center;
   padding-top: 22px;
+  background-color: $text-color;
   h4 {
     color: $white;
     @include fontsize(27px);
@@ -419,29 +421,32 @@ button {
     transform: rotate(-15deg);
   }
 }
+.neu-tag .two {
+  background-color: transparent;
+}
 .slick-prev {
-  @include absolute($top: 6%, $left: 0);
+  @include absolute($top: 10%, $left: 0);
   height: 48px;
   width: 22px;
   border: none;
   text-indent: -9999px;
   background: url(../images/sprite.png) 0 0 no-repeat;
-  background-position: -244px -5px;
-  background-size: 450px 450px;
-  width: 32px;
+  background-position: -95px -2px;
+  background-size: 300px 300px;
+  width: 20px;
   height: 49px;
   z-index: 1;
 }
 .slick-next {
-  @include absolute($top: 6%, $right: 0);
+  @include absolute($top: 10%, $right: 0);
   height: 48px;
   width: 22px;
   border: none;
   text-indent: -9999px;
   background: url(../images/sprite.png) 0 0 no-repeat;
-  background-position: -282px 0;
-  background-size: 450px 450px;
-  width: 26px;
+  background-position: -120px -2px;
+  background-size: 300px 300px;
+  width: 20px;
   height: 51px;
 }
 
@@ -483,6 +488,21 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 0;
+}
+@media screen and (min-width:768px) {
+  .shadow{
+    position: relative;
+    &:after{
+      content: '';
+      @include absolute ($bottom: -14px, $left: 0, $right:0);
+      width: 100%;
+      margin: 0 auto;
+      height: 34px;
+      background: url(../images/sec-1-shadow.png) center no-repeat;
+      background-size: cover;
+      z-index: -1;
+    }
+  }
 }
 /*  Global Sprite Icons -------------------------*/
 /* Global classes------------------ */
@@ -552,7 +572,15 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+a{
+  &:hover{
+    color: $golden;
+  }
+}
+.col-sm-12,
+.col-md-6{
+  padding: 0 8px !important;
+}
 .form-control,
 textarea {
   width: 100%;
@@ -592,11 +620,98 @@ textarea {
     list-style: none;
   }
 }
+.left-social-link {
+  padding: 0 5px;
+  width: 35px;
+  @include fixed($top: 50%, $left: 0);
+  transform: translateY(-50%);
+  z-index: 999;
+  background-color: $text-color;
+  border-radius: 0 15px 0 0;
+  li {
+    position: relative;
+    &::after {
+      content: "";
+      @include absolute($left: 0, $bottom: 0);
+      width: 20px;
+      height: 2px;
+      background-color: $white;
+    }
+    a {
+      display: block;
+      padding: 15px 0;
+      text-align: center;
+    }
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .icon-brand {
+    width: 25px;
+    height: 24px;
+    background-size: 150px 150px;
+    background-position: -75px -3px;
+  }
+  .icon-call {
+    background-position: -137px -2px;
+    background-size: 200px 200px;
+    width: 20px;
+    height: 24px;
+  }
+  .icon-email {
+    background-position: -159px -4px;
+    background-size: 200px 200px;
+    width: 27px;
+    height: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .left-social-link {
+    width: 104px;
+    padding: 0 25px;
+    border-radius: 0 30px 0 0;
+    // width: 209px;
+    li {
+      &::after {
+        content: "";
+        @include absolute($left: 0, $bottom: 0);
+        width: 52px;
+        height: 1px;
+      }
+      a {
+        display: block;
+        padding: 25px 0;
+      }
+    }
+    .icon-brand {
+      width: 50px;
+      height: 30px;
+      background-size: 300px 300px;
+      background-position: -150px -15px;
+    }
+    .icon-call {
+      background-position: -210px -8px;
+      background-size: 300px 300px;
+      width: 20px;
+      height: 24px;
+    }
+    .icon-email {
+      background-position: -241px -10px;
+      background-size: 300px 300px;
+      width: 27px;
+      height: 20px;
+    }
+  }
+}
 body {
+  // background: url(../images/2.jpg) center top;
   // background: url(../images/index.jpg) center top;
-  height: 5000px;
+  // background: url(../images/footer-drop.jpg) center top;
+
+  // height: 5000px;
 }
 .wrapper {
   // opacity: 0.8;
-  
 }

@@ -1,0 +1,21 @@
+.image-with-text-2{
+    .col{
+        padding: 0 !important;
+    }
+    .image-text-content{
+        padding: 64px 43px 30px 59px;
+        h3,h1,p{
+            color: $white;
+        }
+        h1{
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+        p{
+            line-height: 1.4;
+        }
+    }
+    .image-wrapper{
+        position: relative;
+    }
+}

@@ -1,13 +1,16 @@
-
+.category-icon-carousel{
+    margin-bottom: 20px;
+}
 .slider-two{
     .slide{
         text-align: center;
         cursor: pointer;
-        &:hover img{
-            filter: brightness(0%);
+        filter: brightness(0);
+        &:hover{
+                filter: brightness(100%);
         }
         &:hover h3{
-            color: #000;
+            color: $golden;
         }
         h3{
             color: $golden;
@@ -27,6 +30,6 @@
         padding: 0 43px;
     }
     .category-icon-carousel{
-        margin-bottom: 41px;
+        margin-bottom: 52px;
     }
 }

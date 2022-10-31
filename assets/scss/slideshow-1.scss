@@ -2,11 +2,12 @@
   z-index: 2;
   position: relative;
   .slide-content {
-    padding: 25px 0;
+    padding: 25px 0 !important;
   }
   .slideshow-img {
     border-radius: 8px 8px 0 0;
     overflow: hidden;
+    padding: 0 !important;
   }
   .slider-one {
     padding-bottom: 15px;
@@ -16,12 +17,11 @@
 @media screen and (min-width: 768px) {
   .slideshow-1 {
     .slide-content {
-      padding: 25px 15px 40px;
+      padding: 25px 15px 40px !important;
       background-color: $body-color;
     }
     .slideshow-img {
       border-radius: 8px 8px 0 0;
-      overflow: hidden;
       img {
         display: block;
       }
@@ -38,7 +38,7 @@
     padding: 0;
     margin-bottom: 62px;
     .container {
-      box-shadow: 0px 4px 9px rgb(0 0 0 / 25%);
+      // box-shadow: 0px 4px 9px rgb(0 0 0 / 25%);
       padding: 0;
       max-width: 1200px;
     }
@@ -65,9 +65,9 @@
 
 @media screen and (min-width: 1200px) {
   .slideshow-1 {
-    margin-top: -193px;
+    margin-top: -223px;
     .slide-content {
-      padding: 90px 50px 30px 61px;
+      padding: 90px 50px 30px 61px !important;
       h3 {
         @include fontsize(19px);
         margin-bottom: 0;
