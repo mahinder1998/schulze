@@ -15,6 +15,9 @@
             color: $white;
             @include fontsize(13px);
             line-height: 1.75;
+            &:hover{
+              opacity: .8;
+            }
         }
         &::after{
           content: '';
@@ -31,16 +34,15 @@
     @include fontsize(14px);
     a{
       color: $white;
-      position: relative;
-      margin-left: 20px;
-      &::after{
-        content: '';
-        @include absolute ($top:1px, $left:-17px);
-        background: url(../images/sprite.png) 0 0 no-repeat;
-        background-position: -31px -110px;
-        width: 16px;
-        height: 15px;
+      &:hover{
+        opacity: .8;
       }
+    }
+    .icon-heart{
+      background: url(../images/sprite.png) 0 0 no-repeat;
+      background-position: -31px -110px;
+      width: 16px;
+      height: 15px;
     }
   }
 }

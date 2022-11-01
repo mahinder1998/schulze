@@ -1,0 +1,38 @@
+.featured-links{
+    .feature-link{
+        position: relative;
+        .hover-content{
+            @include absolute($top:0, $left:0);
+            transition: .5s;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            background-color: rgba(0, 0, 0, 0.65);
+            padding: 0 15px;
+            opacity: 0;
+            h2{
+                color: $white;
+            }
+        }
+        &:hover{
+            .hover-content{
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width:1200px) {
+    .featured-links{
+        margin-bottom: 74px !important;
+        .feature-link{
+            .hover-content{
+               padding: 0 65px;
+            }
+        }
+    }
+}

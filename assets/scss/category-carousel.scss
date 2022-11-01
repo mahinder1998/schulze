@@ -6,6 +6,7 @@
         text-align: center;
         cursor: pointer;
         filter: brightness(0);
+        transition: all 0.5s;
         &:hover{
                 filter: brightness(100%);
         }
@@ -16,7 +17,7 @@
             color: $golden;
         }
     }
-    .image-wrapper{
+    .image-wrap{
         margin: 0 auto; 
         min-height: 80px;
         img{

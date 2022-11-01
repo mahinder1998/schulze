@@ -3,12 +3,10 @@
         padding: 0 !important;
     }
     margin-bottom: 35px;
-    .image-wrapper{
         img{
             width: 100%;
             display: block;
         }
-    }
     .series-content{
         padding: 10px;
         text-align: center;
@@ -19,6 +17,7 @@
     }
     .product-block{
         position: relative;
+        margin-bottom: 16px;
     }
 }
 

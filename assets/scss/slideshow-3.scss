@@ -1,9 +1,10 @@
 .slideshow-3 {
     z-index: 2;
     position: relative;
-    .slideshow-img {
-      border-radius: 8px 8px 0 0;
-      overflow: hidden;
+    .slick-slide{
+      img{
+        border-radius: 15px 15px 0 0;
+      }
     }
   }
   
@@ -15,18 +16,14 @@
           display: block;
         }
       }
-      .slider-one {
-        min-height: 285px;
-      }
     }
   }
 
   @media screen and (min-width: 992px) {
     .slideshow-3 {
-      margin-top: -100px;
+      margin-top: -155px;
       margin-bottom: 48px;
       .container {
-        box-shadow: 0px 4px 9px rgb(0 0 0 / 25%);
         padding: 0;
         max-width: 1200px;
       }
@@ -44,7 +41,19 @@
   
 @media screen and (min-width: 1200px) {
     .slideshow-3 {
-      margin-top: -206px; 
+      margin-top: -205px; 
+      margin-bottom: 47px !important;
+      .container{
+        position: relative;
+        &::before{
+          content: '';
+          width: 100%;
+          height: 190px;
+          background: url(../images/left-shadow.png) 0 0 no-repeat;
+          background-size: contain;
+          @include absolute($top:192px, $left: -12px);
+        }
+      }
     }
   }
   

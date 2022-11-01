@@ -142,7 +142,7 @@ h1 {
   margin-bottom: 10px;
 }
 h2 {
-  font-weight: 200;
+  font-weight: 400;
   margin-bottom: 15px;
   @include fontsize(25px);
   color: $color-black;
@@ -163,7 +163,7 @@ h5 {
 h6 {
   margin-bottom: 10px;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1199px) {
   h1,
   h2 {
     @include fontsize(25px);
@@ -297,9 +297,11 @@ blockquote {
     height: 32px;
     transform: rotate(-45deg);
   }
-  h4 {
+  .corner-text {
     @include fontsize(16px);
     font-weight: $fw-light;
+    display: block;
+    margin-bottom: 10px;
   }
 }
 /* Global Form Elements -------------------------*/
@@ -358,21 +360,6 @@ form {
 
     opacity: 1;
   }
-}
-.error {
-  margin-bottom: 16px;
-  @media all and (min-width: 768px) {
-    width: 48.5%;
-  }
-  li {
-    padding: 2px 13px;
-    margin-bottom: 10px;
-  }
-}
-textarea.form-input {
-  resize: none;
-  padding: 14px 13px;
-  height: 182px;
 }
 button {
   margin: 0;
@@ -489,8 +476,21 @@ button {
   vertical-align: middle;
   margin-bottom: 0;
 }
+.shadow-2{
+  position: relative;
+  &::after{
+    content: '';
+    @include absolute ($bottom: -15px, $left: 0, $right:0);
+    width: 100%;
+    margin: 0 auto;
+    height: 34px;
+    background: url(../images/shadow-2.png) center no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+}
 @media screen and (min-width:768px) {
-  .shadow{
+  .shadow-1{
     position: relative;
     &:after{
       content: '';
@@ -634,7 +634,7 @@ textarea {
       content: "";
       @include absolute($left: 0, $bottom: 0);
       width: 20px;
-      height: 2px;
+      height: 1px;
       background-color: $white;
     }
     a {
@@ -667,6 +667,20 @@ textarea {
     height: 20px;
   }
 }
+.image-wrapper{
+  img{
+    width: 100%;
+    display: block;
+  }
+}
+.neu-tag-bg{
+  position: relative;
+}
+@media screen and (min-width: 1200px){
+  .mb-3{
+    margin-bottom: 0!important;
+  }
+}
 @media screen and (min-width: 1200px) {
   .left-social-link {
     width: 104px;
@@ -678,7 +692,6 @@ textarea {
         content: "";
         @include absolute($left: 0, $bottom: 0);
         width: 52px;
-        height: 1px;
       }
       a {
         display: block;
@@ -706,6 +719,9 @@ textarea {
   }
 }
 body {
+  // background: url(../images/5.jpg) center top
+  // background: url(../images/4.jpg) center top;
+  // background: url(../images/3.jpg) center top;
   // background: url(../images/2.jpg) center top;
   // background: url(../images/index.jpg) center top;
   // background: url(../images/footer-drop.jpg) center top;

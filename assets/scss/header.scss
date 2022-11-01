@@ -68,7 +68,8 @@
 .secondary-header {
   padding: 10px 0;
   position: relative;
-  background-color: #262729;
+  background: url(../images/footer-bg.jpg) no-repeat center;
+  background-size: cover;
   .brand-logo {
     width: 60px;
     display: block;
@@ -291,7 +292,7 @@
 }
 @media screen and (min-width: 1200px) {
   .secondary-header {
-    padding: 28px 0 205px;
+    padding: 28px 0 186px;
     .brand-logo {
       width: 142px;
     }

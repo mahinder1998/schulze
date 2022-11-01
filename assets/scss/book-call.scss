@@ -4,31 +4,13 @@
     color: #fff;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    margin-bottom: 20px;
-    min-height: 388px;
+    margin-bottom: 16px;
     position: relative;
     overflow: hidden;
-    .image-wrapper {
       img {
         width: 100%;
         display: block;
       }
-    }
-  }
-  .private-shopping.two {
-    padding-top: 0;
-    .image-wrapper.two {
-      width: 100%;
-      margin: 0;
-    }
-  }
-  .glass-img {
-    width: 70px;
-    @include absolute($top: 11%, $right: 15%);
-    img {
-      width: 100%;
-      display: block;
-    }
   }
   .btn{
     width: 147px;
@@ -37,17 +19,15 @@
 .call-content {
   background-color: #262729;
   padding: 15px 20px;
-  @include absolute($bottom: 0, $right: 0);
-  width: 100%;
-  min-height: 209px;
   h3 {
     font-weight: $fw-light;
     @include fontsize(20px);
+    margin-bottom: 8px;
   }
   a {
     color: $white;
     @include fontsize(17px);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     display: block;
     font-weight: $fw-light;
   }
@@ -55,7 +35,7 @@
     background-position: -210px -8px;
     background-size: 300px 300px;
     width: 27px;
-    height: 32px;
+    height: 24px;
     margin-right: 20px;
   }
 }
@@ -64,22 +44,11 @@
   .book-and-call-1 {
     margin-bottom: 59px;
     .private-shopping {
-      min-height: 412px;
       margin-bottom: 0;
     }
   }
 }
 @media screen and (min-width: 1200px) {
-  .book-and-call-1 {
-    .private-shopping {
-        min-height: 530px;
-    }
-    .glass-img {
-      width: 111px;
-      top: 12%;
-      right: 9%;
-    }
-  }
   .call-content{
     padding: 35px 50px 20px 61px;
     min-height: 242px;
@@ -92,7 +61,7 @@
     }
     a{
         font-size: 32px;
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
   }
 }
