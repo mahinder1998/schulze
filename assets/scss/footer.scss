@@ -45,6 +45,10 @@
       height: 15px;
     }
   }
+  &.two{
+    background: url(../images/footer-bg-2.jpg) 0 0 no-repeat;
+    background-size: cover;
+  }
 }
 .slider-three {
   padding: 0 25px;

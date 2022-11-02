@@ -1,9 +1,8 @@
 .header {
   background-color: #ebeaef;
-  padding: 12px 0 11px;
   .top-bar {
     @include fontsize(13px);
-    margin-bottom: 9px;
+    padding: 12px 0 9px;
     font-weight: $fw-medium;
   }
   .icon-facebook {
@@ -62,6 +61,25 @@
       &:first-child {
         margin-bottom: 7px;
       }
+    }
+  }
+  &.dark{
+    background-color: #18191a;
+    color: $white;
+    .icon-facebook {
+      background-position:-26px -53px;
+    }
+    .icon-instagram {
+      background-position: -37px -53px;
+    }
+    .icon-call {
+      background-position: -79px -53px;
+    }
+    .icon-email {
+      background-position: -57px -54px;
+    }
+    a{
+      color: $white;
     }
   }
 }
@@ -166,6 +184,10 @@
         transition: all 0.5s;
       }
     }
+  }
+  &.two{
+    background: url(../images/footer-bg-2.jpg) 0 0 no-repeat;
+    background-size: cover;
   }
 }
 

@@ -131,6 +131,11 @@ body {
   background-color: $body-color;
   @include fontsize(16px);
 }
+body{
+  &.dark{
+    background-color: #18191a;
+  }
+}
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -278,11 +283,11 @@ blockquote {
   }
 }
 .abs-corner {
-  @include absolute($top: -16px, $right: -85px);
+  @include absolute($top: -33px, $right: -85px);
   background-color: $golden;
   transform: rotate(45deg);
   text-align: center;
-  padding: 34px 57px 1px;
+  padding: 60px 57px 1px;
   .icon-calander {
     background-position: -2px -20px;
     background-size: 300px 300px;
@@ -302,6 +307,7 @@ blockquote {
     font-weight: $fw-light;
     display: block;
     margin-bottom: 10px;
+    color: $white;
   }
 }
 /* Global Form Elements -------------------------*/
@@ -719,7 +725,9 @@ textarea {
   }
 }
 body {
-  // background: url(../images/5.jpg) center top
+  // background: url(../images/7.jpg) center top;
+  // background: url(../images/6.jpg) center top;
+  // background: url(../images/5.jpg) center top;
   // background: url(../images/4.jpg) center top;
   // background: url(../images/3.jpg) center top;
   // background: url(../images/2.jpg) center top;
