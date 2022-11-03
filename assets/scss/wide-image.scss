@@ -13,6 +13,34 @@
     &.two{
         margin-bottom: 49px !important;
     }
+    .filter-listing{
+        background-color: $text-color;
+        padding: 15px;
+        li{
+            margin-bottom: 10px;
+        }
+        .form-select{
+            border-radius: 0;
+            padding: 4px 30px 3px 10px;
+            @include fontsize(15px);
+        }
+    }
+}
+@media screen and (min-width: 768px){
+    .wide-image{
+        .filter-listing{
+            display: flex;
+            padding: 15px;
+            li{
+                margin-bottom: 0;
+                width: calc(25% - 20px);
+                margin: 0 10px;
+                a{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 @media screen and (min-width: 992px){
     .wide-image{
@@ -23,15 +51,30 @@
                 border-radius: 20px 20px 0 0;
             }
         }
+        &.text-first{
+            img{
+                border-radius: 0 20px 0 0;
+            }
+        }
     }
 }
 @media screen and (min-width: 1200px){
     .wide-image {
+<<<<<<< HEAD
         margin-top: -193px;
+=======
+        margin-top: -196px;
+>>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
         margin-bottom: 70px !important;
         .container{
             padding: 0;
             max-width: 1200px;
+        }
+        .filter-listing{
+            padding: 34px 66px;
+        }
+        &.form{
+            margin-bottom: 73px !important;
         }
     }
 }

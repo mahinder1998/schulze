@@ -42,7 +42,7 @@
 
 @media screen and (min-width: 768px) {
   .book-and-call-1 {
-    margin-bottom: 59px;
+    margin-bottom: 54px;
     .private-shopping {
       margin-bottom: 0;
     }
@@ -50,7 +50,7 @@
 }
 @media screen and (min-width: 1200px) {
   .call-content{
-    padding: 35px 50px 20px 61px;
+    padding: 30px 50px 0px 61px;
     min-height: 242px;
     h3{
         @include fontsize(32px);
@@ -61,7 +61,7 @@
     }
     a{
         font-size: 32px;
-        margin-bottom: 24px;
+        margin-bottom: 19px;
     }
   }
 }

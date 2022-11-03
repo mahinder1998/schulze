@@ -51,6 +51,7 @@ $(window).on("load", function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     infinite: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 992,
@@ -85,6 +86,7 @@ $(window).on("load", function () {
   $('.slider-nav').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
+    arrows: true,
     asNavFor: '.slider-for',
     focusOnSelect: true
   });
