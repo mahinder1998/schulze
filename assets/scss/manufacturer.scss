@@ -1,0 +1,50 @@
+.manufacturer-information {
+  .container {
+    text-align: center;
+    max-width: 830px;
+  }
+  .image-wrapper {
+    width: 175px;
+    margin: 0 auto 25px;
+  }
+  .format-listing{
+    display: flex;
+    margin: 0 -10px 16px;
+    li{
+        width: calc(33.33% - 20px);
+        margin: 0 10px;
+        text-align: center;
+        img{
+            width: 42px;
+        }
+        h3{
+            @include fontsize(13px);
+        }
+    }
+  }
+}
+@media screen and (min-width: 768px){
+    .manufacturer-information{
+        .format-listing{
+            max-width: 550px;
+            margin: 0 auto 96px;
+            li{
+                h3{
+                    @include fontsize(15px); 
+                    margin-top: 10px;
+                }
+            }
+        }
+        p{
+            margin-bottom: 35px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+  .manufacturer-information {
+    .image-wrapper {
+        width: 358px;
+        margin-bottom: 34px;
+      }
+  }
+}

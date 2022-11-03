@@ -131,6 +131,11 @@ body {
   background-color: $body-color;
   @include fontsize(16px);
 }
+body{
+  &.dark{
+    background-color: #18191a;
+  }
+}
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -278,11 +283,11 @@ blockquote {
   }
 }
 .abs-corner {
-  @include absolute($top: -16px, $right: -85px);
+  @include absolute($top: -33px, $right: -85px);
   background-color: $golden;
   transform: rotate(45deg);
   text-align: center;
-  padding: 34px 57px 1px;
+  padding: 60px 57px 11px;
   .icon-calander {
     background-position: -2px -20px;
     background-size: 300px 300px;
@@ -301,7 +306,7 @@ blockquote {
     @include fontsize(16px);
     font-weight: $fw-light;
     display: block;
-    margin-bottom: 10px;
+    color: $white;
   }
 }
 /* Global Form Elements -------------------------*/
@@ -370,18 +375,18 @@ button {
 .slick-dots {
   @include absolute($bottom: 30px, $right: 0, $left: 0);
   margin: 0 auto;
-  width: 48px;
+  width: 52px;
   display: flex;
-  font-size: 0;
   button {
     border: none;
     height: 11px;
     width: 8px;
     border-radius: 50%;
     background-color: $text-color;
+    font-size: 0;
   }
   li {
-    margin-right: 6px;
+    margin-right: 8px;
     &:last-child {
       margin-right: 0;
     }
@@ -407,9 +412,12 @@ button {
     font-weight: $fw-light !important;
     transform: rotate(-15deg);
   }
-}
-.neu-tag .two {
-  background-color: transparent;
+  &.two{
+    background-color: transparent;
+  }
+  &.left{
+    @include absolute($left: 35px, $top: 35px);
+  }
 }
 .slick-prev {
   @include absolute($top: 10%, $left: 0);
@@ -696,6 +704,9 @@ textarea {
       a {
         display: block;
         padding: 25px 0;
+        &:hover{
+          opacity: .8;
+        }
       }
     }
     .icon-brand {
@@ -719,10 +730,14 @@ textarea {
   }
 }
 body {
-  // background: url(../images/5.jpg) center top
+  // background: url(../images/8.jpg) center top;
+  // background: url(../images/7.jpg) center top;
+  // background: url(../images/6.jpg) center top;
+  // background: url(../images/5.jpg) center top;
   // background: url(../images/4.jpg) center top;
   // background: url(../images/3.jpg) center top;
   // background: url(../images/2.jpg) center top;
+  // background: url(../images/1.jpg) center top
   // background: url(../images/index.jpg) center top;
   // background: url(../images/footer-drop.jpg) center top;
 

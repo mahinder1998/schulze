@@ -1,0 +1,112 @@
+.products {
+  margin-bottom: 20px;
+  h3,
+  h1 {
+    text-align: center;
+  }
+  .image-wrapper {
+    position: relative;
+  }
+  .product {
+    position: relative;
+    margin-bottom: 16px;
+    .product-hover {
+      @include absolute($top: 0, $left: 0);
+      transition: 0.5s;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      background-color: rgba(0, 0, 0, 0.65);
+      padding: 0 15px;
+      opacity: 0;
+      h2 {
+        color: $white;
+        span {
+          @include fontsize(19px);
+        }
+      }
+      img {
+        max-width: 150px;
+        margin-bottom: 20px;
+      }
+      h3 {
+        font-weight: $fw-medium;
+        margin-bottom: 8px;
+      }
+      &.two {
+        align-items: flex-start;
+        padding-top: 48px;
+        img {
+          width: 60px;
+          margin-bottom: 8px;
+        }
+      }
+    }
+    &:hover {
+      .product-hover {
+        opacity: 1;
+      }
+    }
+    .prev-price {
+      display: block;
+      text-decoration: line-through;
+      margin-bottom: 16px;
+    }
+  }
+  .pagination {
+    max-width: 190px;
+    margin: 0 auto;
+    .icon-left {
+      height: 12px;
+      width: 12px;
+      background-color: transparent;
+      transform: rotate(45deg);
+      border-left: 3px solid $text-color;
+      border-bottom: 3px solid $text-color;
+      background-image: none;
+      margin-right: 12px;
+    }
+    .icon-right {
+      height: 12px;
+      width: 12px;
+      background-color: transparent;
+      transform: rotate(45deg);
+      border-top: 3px solid #262729;
+      border-right: 3px solid #262729;
+      background-image: none;
+      margin-left: 12px;
+    }
+    a{
+        @include fontsize(19px);
+        font-weight: $fw-medium;
+        padding: 0 2px;
+        &.active{
+            color: $golden;
+        }
+    }
+  }
+  .row{
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products {
+    margin-bottom: 65px;
+    h1 {
+      margin-bottom: 70px;
+    }
+    .product {
+      .product-hover {
+        padding: 14px 65px 0;
+      }
+    }
+    .row{
+        margin-bottom: 30px;
+      }
+  }
+}

@@ -41,7 +41,7 @@
   
 @media screen and (min-width: 1200px) {
     .slideshow-3 {
-      margin-top: -205px; 
+      margin-top: -193px; 
       margin-bottom: 47px !important;
       .container{
         position: relative;
@@ -53,6 +53,9 @@
           background-size: contain;
           @include absolute($top:192px, $left: -12px);
         }
+      }
+      &.wide-image{
+        margin-bottom: 51px !important;
       }
     }
   }
