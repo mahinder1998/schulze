@@ -2,11 +2,7 @@
   background-color: #ebeaef;
   .top-bar {
     @include fontsize(13px);
-<<<<<<< HEAD
-    padding: 12px 0 9px;
-=======
     padding: 12px 0 12px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
     font-weight: $fw-medium;
   }
   .icon-facebook {
@@ -71,18 +67,6 @@
     background-color: #18191a;
     color: $white;
     .icon-facebook {
-<<<<<<< HEAD
-      background-position:-26px -53px;
-    }
-    .icon-instagram {
-      background-position: -37px -53px;
-    }
-    .icon-call {
-      background-position: -79px -53px;
-    }
-    .icon-email {
-      background-position: -57px -54px;
-=======
       background-position:-81px -53px;
     }
     .icon-instagram {
@@ -93,7 +77,6 @@
     }
     .icon-email {
       background-position: -27px -54px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
     }
     a{
       color: $white;
@@ -203,10 +186,6 @@
     }
   }
   &.two{
-<<<<<<< HEAD
-    background: url(../images/footer-bg-2.jpg) 0 0 no-repeat;
-    background-size: cover;
-=======
     // background: url(../images/footer-bg-2.jpg) 0 0 no-repeat;
     background-size: cover;
     &::after{
@@ -219,7 +198,6 @@
     width: 100%;
     height: 2px;
     background-color: $white;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   }
 }
 

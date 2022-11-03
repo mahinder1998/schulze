@@ -1,9 +1,6 @@
 .image-with-text-2 {
   margin-bottom: 16px;
-<<<<<<< HEAD
-=======
   z-index: 1;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   .image-text-content {
     padding: 15px 20px;
     background-color: $text-color;
@@ -30,10 +27,6 @@
     margin-bottom: 20px;
     font-weight: $fw-regular;
   }
-<<<<<<< HEAD
-  .right-block {
-    margin-bottom: 20px;
-=======
   .left-block{
     background-color: #fff;
     margin-bottom: 16px;
@@ -41,16 +34,11 @@
   }
   .right-block {
     margin-bottom: 16px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   }
 }
 .slider-for {
   width: 100%;
-<<<<<<< HEAD
-  height: 66.66%;
-=======
   margin-bottom: 14px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   .slide {
     img {
       width: 100%;
@@ -70,8 +58,6 @@
     transform: translateY(-50%);
   }
 }
-<<<<<<< HEAD
-=======
 .slider-logo{
   max-width: 225px;
   margin: 0 auto;
@@ -80,7 +66,6 @@
     display: block;
   }
 }
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
 .price-info {
   h2 {
     @include fontsize(30px);
@@ -143,11 +128,7 @@
     }
   }
   .price-info {
-<<<<<<< HEAD
-    padding-bottom: 32px;
-=======
     padding-bottom: 27px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
     h1 {
       @include fontsize(42px);
       margin-top: 20px;
@@ -161,13 +142,8 @@
     }
   }
   .slider-nav {
-<<<<<<< HEAD
-    margin: 0 8px;
-    padding: 0px 59px;
-=======
     margin: 0 8px 58px;
     padding: 0px 42px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
     .slick-slide {
       margin: 0 8px;
     }
@@ -177,8 +153,6 @@
     .slick-next {
       right: 18px;
     }
-<<<<<<< HEAD
-=======
     .slick-current{
       &.slick-active{
         border: 2px solid $golden;
@@ -187,7 +161,6 @@
         display: block;
       }
     }
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   }
 }
 @media screen and (min-width: 1200px) {
@@ -205,8 +178,6 @@
         p {
           line-height: 1.22;
           margin-bottom: 20px;
-<<<<<<< HEAD
-=======
         }
       }
       h1 {
@@ -234,7 +205,6 @@
         }
         h1{
           font-size: 37px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
         }
       }
       h1 {
@@ -249,12 +219,6 @@
         font-weight: $fw-light;
       }
     }
-<<<<<<< HEAD
-    &.two {
-      margin-bottom: 85px !important;
-    }
-=======
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   }
   .slider-for {
     .slide {

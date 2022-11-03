@@ -287,11 +287,7 @@ blockquote {
   background-color: $golden;
   transform: rotate(45deg);
   text-align: center;
-<<<<<<< HEAD
-  padding: 60px 57px 1px;
-=======
   padding: 60px 57px 11px;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   .icon-calander {
     background-position: -2px -20px;
     background-size: 300px 300px;
@@ -310,10 +306,6 @@ blockquote {
     @include fontsize(16px);
     font-weight: $fw-light;
     display: block;
-<<<<<<< HEAD
-    margin-bottom: 10px;
-=======
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
     color: $white;
   }
 }
@@ -738,10 +730,7 @@ textarea {
   }
 }
 body {
-<<<<<<< HEAD
-=======
   // background: url(../images/8.jpg) center top;
->>>>>>> 5732d6608522239a73a713803b3fddfdc10067e0
   // background: url(../images/7.jpg) center top;
   // background: url(../images/6.jpg) center top;
   // background: url(../images/5.jpg) center top;
