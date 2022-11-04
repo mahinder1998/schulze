@@ -10677,7 +10677,7 @@ button:focus {
   content: "";
   top: auto;
   right: 0;
-  bottom: -15px;
+  bottom: -20px;
   left: 0;
   position: absolute;
   width: 100%;
@@ -10877,6 +10877,14 @@ textarea li {
     height: 20px;
   }
 }
+body {
+  background: url(../images/4.jpg) center top;
+}
+
+.wrapper {
+  opacity: 0.8;
+}
+
 .header {
   background-color: #ebeaef;
 }
@@ -10948,16 +10956,16 @@ textarea li {
   color: #ffffff;
 }
 .header.dark .icon-facebook {
-  background-position: -81px -53px;
+  background-position: -26px -53px;
 }
 .header.dark .icon-instagram {
-  background-position: -63px -52px;
+  background-position: -38px -52px;
 }
 .header.dark .icon-call {
-  background-position: -49px -53px;
+  background-position: -79px -53px;
 }
 .header.dark .icon-email {
-  background-position: -27px -54px;
+  background-position: -57px -54px;
 }
 .header.dark a {
   color: #ffffff;
@@ -11112,6 +11120,9 @@ textarea li {
   .header .left-block {
     margin: 0;
   }
+  .secondary-header {
+    padding: 28px 0 13px;
+  }
   .secondary-header .brand-logo {
     width: 100px;
     margin: 0 auto 13px;
@@ -11127,6 +11138,7 @@ textarea li {
     position: static;
     max-width: 738px;
     margin: 0 auto;
+    padding-bottom: 0;
   }
   .secondary-header .navbar .menu {
     display: flex;
@@ -11136,7 +11148,7 @@ textarea li {
     color: #fff;
     font-size: 0.9375rem;
     position: relative;
-    padding-bottom: 26px;
+    padding-bottom: 10px;
   }
   .secondary-header .navbar .menu > li > a::after {
     content: "";
@@ -11169,7 +11181,7 @@ textarea li {
     width: 190px;
     list-style: none;
     z-index: 9;
-    padding-top: 16px;
+    padding-top: 29px;
     display: none;
     transition: 0.5s;
     border: none;
@@ -11192,15 +11204,7 @@ textarea li {
     padding: 15px 0 9px;
   }
 }
-@media screen and (min-width: 992px) {
-  .secondary-header {
-    padding: 20px 0 120px;
-  }
-}
 @media screen and (min-width: 1200px) {
-  .secondary-header {
-    padding: 28px 0 186px;
-  }
   .secondary-header .brand-logo {
     width: 142px;
   }
@@ -11214,6 +11218,19 @@ textarea li {
   .secondary-header .navbar .menu li a::after {
     right: -26px;
     top: 8px;
+  }
+  .secondary-header::before {
+    content: "";
+    height: 391px;
+    width: 100%;
+    background: url(../images/footer-bg.jpg) no-repeat center;
+    background-size: cover;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    position: absolute;
+    z-index: -1;
   }
 }
 .slideshow-1 {
@@ -11245,7 +11262,6 @@ textarea li {
 }
 @media screen and (min-width: 992px) {
   .slideshow-1 {
-    margin-top: -155px;
     z-index: 2;
     padding: 0;
     margin-bottom: 62px;
@@ -11271,9 +11287,6 @@ textarea li {
   }
 }
 @media screen and (min-width: 1200px) {
-  .slideshow-1 {
-    margin-top: -193px;
-  }
   .slideshow-1 .slide-content {
     padding: 90px 50px 30px 61px !important;
   }
@@ -11324,10 +11337,10 @@ textarea li {
   font-weight: 300;
 }
 .call-content .icon-call {
-  background-position: -210px -8px;
+  background-position: -56px -3px;
   background-size: 300px 300px;
-  width: 27px;
-  height: 24px;
+  width: 32px;
+  height: 35px;
   margin-right: 20px;
 }
 
@@ -11341,7 +11354,7 @@ textarea li {
 }
 @media screen and (min-width: 1200px) {
   .call-content {
-    padding: 30px 50px 0px 61px;
+    padding: 30px 60px 0px 61px;
     min-height: 242px;
   }
   .call-content h3, .call-content .h3 {
@@ -11516,7 +11529,7 @@ textarea li {
   line-height: 1.75;
 }
 .footer .footer-listing li a:hover {
-  opacity: 0.8;
+  color: #dcc889;
 }
 .footer .footer-listing li::after {
   content: "";
@@ -11596,6 +11609,9 @@ textarea li {
 .slideshow-3 .slick-slide img {
   border-radius: 15px 15px 0 0;
 }
+.slideshow-3.wide-image img {
+  border-radius: 0;
+}
 
 @media screen and (min-width: 768px) {
   .slideshow-3 .slideshow-img {
@@ -11607,7 +11623,6 @@ textarea li {
 }
 @media screen and (min-width: 992px) {
   .slideshow-3 {
-    margin-top: -155px;
     margin-bottom: 48px;
   }
   .slideshow-3 .container {
@@ -11624,7 +11639,6 @@ textarea li {
 }
 @media screen and (min-width: 1200px) {
   .slideshow-3 {
-    margin-top: -193px;
     margin-bottom: 47px !important;
   }
   .slideshow-3 .container {
@@ -11705,6 +11719,9 @@ textarea li {
   top: 50%;
   transform: translateY(-50%);
 }
+.slider-nav .slide {
+  display: flex !important;
+}
 
 .slider-logo {
   max-width: 225px;
@@ -11732,6 +11749,10 @@ textarea li {
   margin-bottom: 15px;
   display: block;
   text-decoration: line-through;
+}
+.price-info .prev-price.two {
+  margin-bottom: 0;
+  font-size: 1rem;
 }
 .price-info .info-listing li:nth-child(odd) {
   color: #ffffff;
@@ -11812,7 +11833,7 @@ textarea li {
     max-width: 1200px;
   }
   .image-with-text-2 .image-text-content {
-    padding: 64px 43px 30px 59px;
+    padding: 64px 46px 30px 59px;
   }
   .image-with-text-2 .image-text-content.two {
     padding: 66px 57px 30px 67px;
@@ -11836,6 +11857,16 @@ textarea li {
   .image-with-text-2.two {
     margin-bottom: 85px !important;
   }
+  .image-with-text-2.two h1, .image-with-text-2.two .h1 {
+    font-size: 2.625rem;
+    letter-spacing: 0;
+    word-spacing: 1px;
+    line-height: 1.1;
+  }
+  .image-with-text-2.two.small h2, .image-with-text-2.two.small .h2 {
+    margin-bottom: 45px;
+    font-weight: 500;
+  }
   .image-with-text-2.product-details h2, .image-with-text-2.product-details .h2 {
     margin-bottom: 46px;
   }
@@ -11850,11 +11881,6 @@ textarea li {
     letter-spacing: 4px;
     word-spacing: -16px;
     line-height: 1.1;
-  }
-  .image-with-text-2.product-details h2, .image-with-text-2.product-details .h2 {
-    font-size: 2.625rem;
-    color: #ffffff;
-    font-weight: 300;
   }
   .slider-for .slide img {
     height: 100%;
@@ -11933,7 +11959,7 @@ textarea li {
   .wide-image .filter-listing li {
     margin-bottom: 0;
     width: calc(25% - 20px);
-    margin: 0 10px;
+    margin: 0 7px;
   }
   .wide-image .filter-listing li a {
     width: 100%;
@@ -11941,7 +11967,6 @@ textarea li {
 }
 @media screen and (min-width: 992px) {
   .wide-image {
-    margin-top: -155px;
     margin-bottom: 48px;
   }
   .wide-image .container img {
@@ -11953,7 +11978,6 @@ textarea li {
 }
 @media screen and (min-width: 1200px) {
   .wide-image {
-    margin-top: -196px;
     margin-bottom: 70px !important;
   }
   .wide-image .container {
@@ -11968,13 +11992,22 @@ textarea li {
   }
 }
 .content {
-  padding: 15px 0;
-  max-width: 960px;
-  margin: 0 auto;
   text-align: center;
 }
 .content h3, .content .h3 {
   margin-bottom: 5px;
+}
+.content h4, .content .h4 {
+  font-weight: bold;
+  font-size: 0.8125rem;
+}
+.content p {
+  max-width: 960px;
+  margin: 0 auto 20px;
+}
+.content p .highligted {
+  color: #dcc889;
+  cursor: pointer;
 }
 
 .contact .contact-block {
@@ -11996,7 +12029,12 @@ textarea li {
   color: #18191a;
   font-size: 0.9375rem;
 }
-.contact .contact-block .form-left-content textarea {
+.contact .contact-block .form-input:focus-visible {
+  outline: none;
+  border: none;
+}
+.contact .contact-block textarea {
+  min-height: 113px;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -12008,10 +12046,14 @@ textarea li {
 .contact .contact-block .form-btn {
   margin-bottom: 10px;
   font-size: 0.9375rem;
-  color: #18191a;
+  letter-spacing: -0.4px;
+  padding: 10px;
 }
 .contact .contact-block .form-check {
   margin-bottom: 10px;
+}
+.contact .contact-block .form-check .form-check-input[type=checkbox] {
+  border-radius: 0;
 }
 .contact .contact-block .form-check-label {
   font-size: 0.71875rem;
@@ -12033,7 +12075,6 @@ textarea li {
   font-weight: 500;
   color: #ffffff;
   display: inline-block;
-  margin-bottom: 10px;
 }
 .contact .contact-block .contact-right h2, .contact .contact-block .contact-right .h2 {
   font-size: 1.6875rem;
@@ -12070,32 +12111,34 @@ textarea li {
   display: block;
 }
 
-.newsletter-block {
+.newsletter {
+  margin-bottom: 15px;
+}
+.newsletter .newsletter-block {
   background-color: #262729;
   padding: 15px;
 }
-.newsletter-block .newsletter-left {
+.newsletter .newsletter-block .newsletter-left {
   display: flex;
   margin-bottom: 10px;
 }
-.newsletter-block .newsletter-left .icon-message {
+.newsletter .newsletter-block .newsletter-left .icon-message {
   background-image: url("../images/message.png");
   background-size: contain;
   width: 35px;
   height: 26px;
   margin-right: 5px;
 }
-.newsletter-block .newsletter-left h1, .newsletter-block .newsletter-left .h1 {
+.newsletter .newsletter-block .newsletter-left h1, .newsletter .newsletter-block .newsletter-left .h1 {
   font-size: 1.25rem;
   color: #ffffff;
   font-weight: 300;
   margin-bottom: 0;
-  color: #ffffff;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-left-content {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-left-content {
   margin-bottom: 5px;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-input {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-input {
   padding: 0 10px;
   height: 34px;
   background-color: #ebeaef;
@@ -12103,14 +12146,14 @@ textarea li {
   color: #18191a;
   font-size: 0.9375rem;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-input:focus-visible {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-input:focus-visible {
   outline: none;
   border: none;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-left-content {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-left-content {
   margin-bottom: 5px;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-input {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-input {
   padding: 0 10px;
   height: 34px;
   background-color: #ebeaef;
@@ -12118,16 +12161,16 @@ textarea li {
   color: #18191a;
   font-size: 0.9375rem;
 }
-.newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-input:focus-visible {
+.newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-folder .form-input:focus-visible {
   outline: none;
   border: none;
 }
-.newsletter-block .newsletter-right .form-check-label {
+.newsletter .newsletter-block .newsletter-right .form-check-label {
   font-size: 0.71875rem;
   color: #ffffff;
   padding-top: 6px;
 }
-.newsletter-block .newsletter-right .form-check-label .highligted {
+.newsletter .newsletter-block .newsletter-right .form-check-label .highligted {
   color: #dcc889;
   cursor: pointer;
 }
@@ -12205,36 +12248,107 @@ textarea li {
   .contact-block .form-left-content .form-input {
     padding: 0 14px;
   }
-  .newsletter {
-    padding: 25px;
-  }
   .newsletter .newsletter-wrapper {
     display: flex;
+    margin-bottom: 3px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .content {
-    padding-top: 52px;
-  }
   .content p {
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
   }
   .contact .contact-block .contact-left .form-wrap .form-left-content {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
   }
   .newsletter .newsletter-block .newsletter-right .newsletter-wrapper .newsletter-wrap .form-left-content {
     margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
+  .content h3, .content .h3 {
+    letter-spacing: 0.1px;
+    margin-left: -29px;
+    margin-bottom: 3px;
+  }
+  .content h1, .content .h1 {
+    margin-left: -39px;
+    letter-spacing: 0.4px;
+    margin-bottom: 21px;
+  }
+  .content p {
+    line-height: 1.2;
+    margin: 0 auto 32px;
+  }
+  .content h4, .content .h4 {
+    margin-bottom: 17px;
+    font-size: 0.625rem;
+    letter-spacing: 1.7px;
+    color: #000000;
+  }
   .contact .contact-block {
-    padding: 67px 67px 76px 68px;
+    padding: 67px 68px 65px 44px;
+  }
+  .contact .contact-block .contact-left {
+    max-width: 680px;
+  }
+  .contact .contact-block .contact-left .form-wrap {
+    padding-right: 0;
+  }
+  .contact .contact-block .contact-left .form-wrap .form-left-content textarea {
+    margin-bottom: -7px;
+    letter-spacing: 1px;
+    padding: 8px 15px;
+  }
+  .contact .contact-block .contact-left .contact-bottom .form-btn {
+    padding: 8px 17px;
+    margin-right: 15px;
+  }
+  .contact .contact-block .contact-left .contact-bottom .form-check-label {
+    padding-top: 8px;
+  }
+  .contact .contact-block .contact-right {
+    max-width: 371px;
+    padding-left: 53px;
+  }
+  .contact .contact-block .contact-right .title {
+    margin-bottom: 0;
+  }
+  .contact .contact-block .contact-right h2, .contact .contact-block .contact-right .h2 {
+    font-size: 2.625rem;
+    margin-bottom: 22px;
+  }
+  .contact .contact-block .contact-right .address-deatil .home-address {
+    margin-bottom: 3px;
+  }
+  .contact .contact-block .contact-right .address-contact .contact-num {
+    margin-bottom: 1px;
+  }
+  .contact .contact-block .contact-right .address-contact .home-address {
+    margin-bottom: 1px;
+  }
+  .newsletter {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
   }
   .newsletter .newsletter-block {
-    padding: 35px 67px 34px 68px;
+    padding: 35px 14px 30px 54px;
   }
-  .newsletter .newsletter-left h1, .newsletter .newsletter-left .h1 {
+  .newsletter .newsletter-block .newsletter-left {
+    padding-top: 14px;
+  }
+  .newsletter .newsletter-block .newsletter-left .icon-message {
+    margin-right: 20px;
+  }
+  .newsletter .newsletter-block .newsletter-left h1, .newsletter .newsletter-block .newsletter-left .h1 {
     font-size: 1.8925rem;
+    letter-spacing: 1px;
+  }
+  .newsletter .newsletter-block .newsletter-right .form-check {
+    margin-left: 8px;
+  }
+  .newsletter .newsletter-block .newsletter-right .form-check .form-check-label {
+    padding-top: 7px;
   }
 }
 .book-and-call-2 {
@@ -12245,6 +12359,11 @@ textarea li {
 }
 .book-and-call-2 .blank-wrap .image-wrapper {
   padding: 15px 20px;
+}
+.book-and-call-2 .blank-wrap .laptop-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .book-and-call-2 .image-text-content {
   padding: 15px 20px;
@@ -12282,12 +12401,10 @@ textarea li {
   margin-bottom: 20px;
   font-weight: 400;
 }
-
-@media screen and (min-width: 992px) {
-  .book-and-call-2 .col-md-4 {
-    padding-right: 0 !important;
-  }
+.book-and-call-2 .col-md-4 {
+  background-color: #262729;
 }
+
 @media screen and (min-width: 1200px) {
   .book-and-call-2 {
     margin-bottom: 51px;
@@ -12314,9 +12431,6 @@ textarea li {
   }
   .book-and-call-2 .blank-wrap .image-wrapper img {
     max-width: 377px;
-  }
-  .book-and-call-2 .blank-wrap .col-md-6 {
-    padding: 0 !important;
   }
 }
 .products {

@@ -488,7 +488,7 @@ button {
   position: relative;
   &::after{
     content: '';
-    @include absolute ($bottom: -15px, $left: 0, $right:0);
+    @include absolute ($bottom: -20px, $left: 0, $right:0);
     width: 100%;
     margin: 0 auto;
     height: 34px;
@@ -734,7 +734,7 @@ body {
   // background: url(../images/7.jpg) center top;
   // background: url(../images/6.jpg) center top;
   // background: url(../images/5.jpg) center top;
-  // background: url(../images/4.jpg) center top;
+  background: url(../images/4.jpg) center top;
   // background: url(../images/3.jpg) center top;
   // background: url(../images/2.jpg) center top;
   // background: url(../images/1.jpg) center top
@@ -744,5 +744,6 @@ body {
   // height: 5000px;
 }
 .wrapper {
-  // opacity: 0.8;
+  // background: url(../images/footer-bg.jpg) repeat-x center;
+  opacity: 0.8;
 }

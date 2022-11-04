@@ -1,62 +1,62 @@
 .slideshow-3 {
-    z-index: 2;
-    position: relative;
-    .slick-slide{
-      img{
-        border-radius: 15px 15px 0 0;
-      }
+  z-index: 2;
+  position: relative;
+  .slick-slide {
+    img {
+      border-radius: 15px 15px 0 0;
     }
   }
-  
-  @media screen and (min-width: 768px) {
-    .slideshow-3 {
-      .slideshow-img {
-        border-radius: 8px 8px 0 0;
-        img {
-          display: block;
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 992px) {
-    .slideshow-3 {
-      margin-top: -155px;
-      margin-bottom: 48px;
-      .container {
-        padding: 0;
-        max-width: 1200px;
-      }
-      .slider-one {
-        border-radius: 20px 20px 0 0;
-        overflow: hidden;
-      }
-      .slideshow-img {
+  &.wide-image{
+      img {
         border-radius: 0;
       }
-    }
   }
-  
+}
 
-  
-@media screen and (min-width: 1200px) {
-    .slideshow-3 {
-      margin-top: -193px; 
-      margin-bottom: 47px !important;
-      .container{
-        position: relative;
-        &::before{
-          content: '';
-          width: 100%;
-          height: 190px;
-          background: url(../images/left-shadow.png) 0 0 no-repeat;
-          background-size: contain;
-          @include absolute($top:192px, $left: -12px);
-        }
-      }
-      &.wide-image{
-        margin-bottom: 51px !important;
+@media screen and (min-width: 768px) {
+  .slideshow-3 {
+    .slideshow-img {
+      border-radius: 8px 8px 0 0;
+      img {
+        display: block;
       }
     }
   }
-  
+}
+
+@media screen and (min-width: 992px) {
+  .slideshow-3 {
+    margin-bottom: 48px;
+    .container {
+      padding: 0;
+      max-width: 1200px;
+    }
+    .slider-one {
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+    }
+    .slideshow-img {
+      border-radius: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slideshow-3 {
+    margin-bottom: 47px !important;
+    .container {
+      position: relative;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 190px;
+        background: url(../images/left-shadow.png) 0 0 no-repeat;
+        background-size: contain;
+        @include absolute($top: 192px, $left: -12px);
+      }
+    }
+    &.wide-image {
+      margin-bottom: 51px !important;
+    }
+  }
+}

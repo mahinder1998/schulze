@@ -32,10 +32,10 @@
     font-weight: $fw-light;
   }
   .icon-call {
-    background-position: -210px -8px;
+    background-position: -56px -3px;
     background-size: 300px 300px;
-    width: 27px;
-    height: 24px;
+    width: 32px;
+    height: 35px;
     margin-right: 20px;
   }
 }
@@ -50,7 +50,7 @@
 }
 @media screen and (min-width: 1200px) {
   .call-content{
-    padding: 30px 50px 0px 61px;
+    padding: 30px 60px 0px 61px;
     min-height: 242px;
     h3{
         @include fontsize(32px);

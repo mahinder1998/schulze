@@ -5,6 +5,11 @@
     .image-wrapper{
         padding: 15px 20px;
     }
+    .laptop-image{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   .image-text-content {
     padding: 15px 20px;
@@ -45,21 +50,17 @@
     margin-bottom: 20px;
     font-weight: $fw-regular;
   }
+  .col-md-4{
+    background-color: $text-color;
+  }
 }
-// @media screen and (min-width: 768px) {
-//   .book-and-call-2{
-//     .row {
-//         padding: 0 10px;
-//       }
-//   } 
+// @media screen and (min-width: 992px){
+//     .book-and-call-2{
+//         .col-md-4{
+//             padding-right: 0 !important;
+//         }
+//     }
 // }
-@media screen and (min-width: 992px){
-    .book-and-call-2{
-        .col-md-4{
-            padding-right: 0 !important;
-        }
-    }
-}
 @media screen and (min-width: 1200px) {
   .book-and-call-2 {
     margin-bottom: 51px;
@@ -87,12 +88,6 @@
           max-width: 377px;
         }
       }
-      .col-md-6{
-        padding: 0 !important;
-      }
     }
-    // .row {
-    //   padding: 0 7px;
-    // }
   }
 }
