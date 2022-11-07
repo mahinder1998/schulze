@@ -6,6 +6,7 @@
     background-color: $text-color;
     h3,
     h1,
+    h2,
     p {
       color: $white;
     }
@@ -16,7 +17,7 @@
     p {
       line-height: 1.4;
     }
-    &.two {
+    &.big {
       h3 {
         color: $golden;
       }
@@ -50,12 +51,18 @@
   padding: 0 26px;
   margin: 0 -5px 20px;
   .slick-slide {
-    margin: 0 5px;
+    margin: 0 8px;
   }
   .slick-prev,
   .slick-next {
     top: 50%;
     transform: translateY(-50%);
+  }
+  .slick-prev{
+    left: 7px;
+  }
+  .slick-next{
+    right: 7px;
   }
   .slide{
     display: flex !important;
@@ -75,6 +82,7 @@
     font-weight: $fw-light;
     margin-top: 20px;
     margin-bottom: 10px !important;
+    color: $golden !important;
     span {
       @include fontsize(19px);
     }
@@ -84,13 +92,8 @@
   }
   .prev-price {
     @include fontsize(19px);
-    margin-bottom: 15px;
-    display: block;
     text-decoration: line-through;
-    &.two{
-      margin-bottom: 0;
-      @include fontsize(16px);
-    }
+    color: $golden;
   }
   .info-listing {
     li {
@@ -104,6 +107,9 @@
         margin-bottom: 15px;
       }
     }
+  }
+  .prev-price{
+    @include fontsize(15px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -150,9 +156,13 @@
   }
   .slider-nav {
     margin: 0 8px 58px;
-    padding: 0px 42px;
+    padding: 0px 60px;
+    .slick-track{
+      // display: flex;
+    }
     .slick-slide {
-      margin: 0 8px;
+      margin: 0 5px;
+      border: 2px solid transparent;
     }
     .slick-prev {
       left: 18px;
@@ -162,7 +172,7 @@
     }
     .slick-current{
       &.slick-active{
-        border: 2px solid $golden;
+        border-color: $golden;
       }
       img{
         display: block;
@@ -172,7 +182,7 @@
 }
 @media screen and (min-width: 1200px) {
   .image-with-text-2 {
-    margin-bottom: 49px !important;
+    margin-bottom: 49px;
     .container {
       padding: 0;
       max-width: 1200px;
@@ -215,12 +225,10 @@
       }
     }
     &.product-details{
-      h2{
-        margin-bottom: 46px;
-      }
+      margin-bottom: 86px;
       .image-text-content{
         h3{
-          margin-bottom: 6px;
+          margin-top: 16px;
         }
         h1{
           font-size: 37px;
@@ -229,14 +237,9 @@
       h1 {
         @include fontsize(62px);
         letter-spacing: 4px;
-        word-spacing: -16px;
+        word-spacing: -7px;
         line-height: 1.1;
       }
-      // h2 {
-      //   @include fontsize(42px);
-      //   color: $white;
-      //   font-weight: $fw-light;
-      // }
     }
   }
   .slider-for {

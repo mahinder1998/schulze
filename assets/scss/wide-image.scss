@@ -11,7 +11,7 @@
         }
     }
     &.two{
-        margin-bottom: 49px !important;
+        margin-bottom: 49px;
     }
     .filter-listing{
         background-color: $text-color;
@@ -33,11 +33,16 @@
             padding: 15px;
             li{
                 margin-bottom: 0;
-                width: calc(25% - 20px);
+                width: calc(25% - 14px);
                 margin: 0 7px;
-                a{
-                    width: 100%;
-                }
+            }
+            .btn{
+                width: 100%;
+            }
+        }
+        &.text-first{
+            img{
+                border-radius: 0 15px 0 0;
             }
         }
     }
@@ -59,7 +64,7 @@
 }
 @media screen and (min-width: 1200px){
     .wide-image {
-        margin-bottom: 70px !important;
+        margin-bottom: 70px;
         .container{
             padding: 0;
             max-width: 1200px;
@@ -68,7 +73,7 @@
             padding: 34px 66px;
         }
         &.form{
-            margin-bottom: 73px !important;
+            margin-bottom: 73px;
         }
     }
 }

@@ -69,6 +69,9 @@
       border-bottom: 3px solid $text-color;
       background-image: none;
       margin-right: 12px;
+      &:hover{
+        border-color: $golden;
+      }
     }
     .icon-right {
       height: 12px;
@@ -79,6 +82,9 @@
       border-right: 3px solid #262729;
       background-image: none;
       margin-left: 12px;
+      &:hover{
+        border-color: $golden;
+      }
     }
     a{
         @include fontsize(19px);
@@ -97,9 +103,6 @@
 @media screen and (min-width: 1200px) {
   .products {
     margin-bottom: 65px;
-    h1 {
-      margin-bottom: 70px;
-    }
     .product {
       .product-hover {
         padding: 14px 65px 0;

@@ -50,9 +50,9 @@
                 <li><a href="#">Home</a></li>
                 <li>
                   <a href="#">Gartenmöbel</a>
+                  <i class="icon-arrow"></i>
                   <ul class="sub-menu">
                     <li><a href="#">Gartenmöbel</a>
-                      <i class="icon-arrow"></i>
                     </li>
                     <li><a href="#">Sonnenschirme</a>
                       <i class="icon-arrow"></i>
@@ -82,7 +82,7 @@
       </header>
       <!-- header-end -->
       <!-- wide-image-satrt -->
-      <section class="wide-image two">
+      <section class="wide-image">
         <div class="container shadow-1">
           <img src="assets/images/wide-image-1.jpg" alt="wide-image">
         </div>
@@ -99,8 +99,8 @@
          </p>
          <h4>Schulze Outdoor Living</h4>
          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <b>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</b> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-           <a class="highligted">Lorem ipsum dolor sit amet, est etsconsetetur sadipscing elitr,</a> sed diam nonumy eirmod tempor invidunt ut labore et At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+           sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. <strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</strong> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+           <a class="highligted" href="#">Lorem ipsum dolor sit amet, est etsconsetetur sadipscing elitr,</a> sed diam nonumy eirmod tempor invidunt ut labore et At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
          </p>
          <p>
            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
@@ -130,15 +130,15 @@
                     <input type="text" class="form-input" placeholder="E-Mailadresse">
                   </div>
                   <div class="form-left-content">
-                    <textarea>Ihre Nachricht</textarea>
+                    <textarea placeholder="Ihre Nachricht"></textarea>
                   </div>
                 </div>
                 <div class="contact-bottom">
-                <button type="button" class="btn two form-btn">Nachricht senden</button>
+                <button type="button" class="btn two">Nachricht senden</button>
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="flexcheckchecked" checked>
                   <label class="form-check-label" for="flexcheckchecked">
-                    Ich akzeptiere die <a class="highligted">Datenschutzerklärung</a>
+                    Ich akzeptiere die <a href="#" class="highligted">Datenschutzerklärung</a>
                   </label>
                 </div>
                 </div>
@@ -155,9 +155,9 @@
                   <span class="home-address">Deutschland</span>
                 </div>
                 <div class="address-contact">
-                  <a href="tel:6012012" class="contact-num">Fon 040 / 6012012 </a>
-                  <span class="home-address">Fax 040 / 6017688</span>
-                  <a href="mailto:info@schulze-outdoorliving.de" class="address-contact-mail">info@schulze-outdoorliving.de</a>
+                  <a href="tel:0406012012" class="contact-details">Fon 040 / 6012012 </a>
+                  <a href="tel:0406012012" class="contact-details">Fax 040 / 6017688</a>
+                  <a href="mailto:info@schulze-outdoorliving.de" class="contact-details">info@schulze-outdoorliving.de</a>
                 </div>
               </address>
             </div>
@@ -176,22 +176,18 @@
             <div class="newsletter-right">
               <form>
                 <div class="newsletter-wrapper">
-                  <div class="newsletter-wrap">
                     <div class="form-left-content">
                       <input type="text" class="form-input" placeholder="Vorname">
                     </div>
                     <div class="form-left-content">
                       <input type="text" class="form-input" placeholder="Nachname">
                     </div>
-                  </div>
-                  <div class="newsletter-folder">
                     <div class=" form-left-content">
                       <input type="text" class="form-input" placeholder="E-Mailadresse">
                     </div>
-                  </div>
-                  <div class="contact-bottom">
-                   <button type="button" class="btn two form-btn newsletter-btn">Anmelden</button>
-                  </div>
+                   <div class="form-left-content">
+                    <button type="button" class="btn two">Anmelden</button>
+                   </div>
                 </div>
                 <div class="form-check">
                   <input type="checkbox" class="form-check-input" value="" id="checkchecked" checked>
@@ -246,9 +242,17 @@
         </div>
       </footer>
       <ul class="left-social-link">
-        <li><a href="#"><i class="icon-brand"></i></a></li>
-        <li><a href="#"><i class="icon-call"></i></a></li>
-        <li><a href="#"><i class="icon-email"></i></a></li>
+        <div class="side-shadow">
+          <li>
+            <a href="#"><i class="icon-brand"></i></a>
+          </li>
+          <li>
+            <a href="tel:0406012012"><i class="icon-call"></i></a>
+          </li>
+          <li>
+            <a href="mailto:info@schulze-outdoorliving.de"><i class="icon-email"></i></a>
+          </li>
+        </div>
       </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>

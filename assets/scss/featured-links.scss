@@ -1,6 +1,7 @@
 .featured-links{
     .feature-link{
         position: relative;
+        margin-bottom: 16px;
         .hover-content{
             @include absolute($top:0, $left:0);
             transition: .5s;

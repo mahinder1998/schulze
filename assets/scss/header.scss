@@ -1,5 +1,6 @@
 .header {
   background-color: #ebeaef;
+  margin-bottom: 16px;
   .top-bar {
     @include fontsize(13px);
     padding: 12px 0 12px;
@@ -110,7 +111,7 @@
       width: 100%;
     li {
       position: relative;
-      margin-bottom: 8px;
+      margin-bottom: 12px;
       padding: 0 15px;
       a {
         color: $white;
@@ -259,6 +260,9 @@
         display: flex;
         width: 100%;
         > li {
+          >.icon-arrow{
+            display: none;
+          }
           > a {
             color: #fff;
             @include fontsize(15px);
@@ -320,6 +324,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .header{
+    margin-bottom: 0;
+  }
   .secondary-header {
     .brand-logo {
       width: 142px;

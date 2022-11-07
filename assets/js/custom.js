@@ -87,7 +87,8 @@ $(window).on("load", function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
+    dots: false,
     asNavFor: '.slider-for',
-    focusOnSelect: true
+    focusOnSelect: true,
   });
 });
