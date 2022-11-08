@@ -10445,11 +10445,6 @@ blockquote {
   background-color: #262729;
 }
 
-@media screen and (max-width: 768px) {
-  .abs-corner {
-    transform: scale(0.75);
-  }
-}
 .abs-corner {
   top: -33px;
   right: -85px;
@@ -10482,6 +10477,13 @@ blockquote {
   color: #ffffff;
 }
 
+@media screen and (max-width: 768px) {
+  .abs-corner {
+    transform: rotate(45deg) scale(0.75);
+    top: -45px;
+    right: -102px;
+  }
+}
 /* Global Form Elements -------------------------*/
 .form-input {
   -webkit-appearance: none;
@@ -10897,6 +10899,34 @@ textarea li {
   }
   .left-social-link .side-shadow {
     padding: 0 25px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .shadow-three::before {
+    content: "";
+    top: 193px;
+    right: auto;
+    bottom: auto;
+    left: -9px;
+    position: absolute;
+    height: 185px;
+    width: 17px;
+    background: url(../images/left-shadow.png) 0 0 no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+  .shadow-three::after {
+    content: "";
+    top: 193px;
+    right: -9px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    height: 185px;
+    width: 17px;
+    background: url(../images/right-shadow.png) 0 0 no-repeat;
+    background-size: contain;
+    z-index: -1;
   }
 }
 .header {
@@ -12110,7 +12140,7 @@ textarea li {
 }
 
 .form-input {
-  padding: 0 10px;
+  padding: 0 14px;
   height: 34px;
   background-color: #ebeaef;
   border: none;
@@ -12309,15 +12339,28 @@ textarea {
     letter-spacing: 1.7px;
     color: #000000;
   }
+  .newsletter {
+    margin-bottom: 69px;
+  }
   .newsletter .newsletter-block {
     padding: 36px 65px 34px 66px;
   }
   .newsletter .newsletter-block .newsletter-left {
-    padding-top: 17px;
+    padding-top: 12px;
     margin-right: 41px;
   }
   .newsletter .newsletter-block .newsletter-left h1, .newsletter .newsletter-block .newsletter-left .h1 {
     font-size: 2rem;
+  }
+  .newsletter .newsletter-block .newsletter-left .icon-message {
+    margin-top: 4px;
+  }
+  .newsletter .newsletter-wrapper .form-left-content {
+    width: 174px;
+  }
+  .newsletter .newsletter-wrapper .btn.two {
+    min-width: 112px;
+    margin-left: 6px;
   }
   .contact .contact-block {
     padding: 67px 68px 58px 59px;
@@ -12350,6 +12393,9 @@ textarea {
   .contact .contact-block .contact-right h2, .contact .contact-block .contact-right .h2 {
     font-size: 2.625rem;
     margin-bottom: 22px;
+  }
+  .form-check {
+    padding-top: 5px;
   }
 }
 .book-and-call-2 {

@@ -78,7 +78,7 @@
   }
 }
 .form-input {
-  padding: 0 10px;
+  padding: 0 14px;
   height: 34px;
   background-color: $body-color;
   border: none;
@@ -311,16 +311,30 @@ textarea {
     }
   }
   // contact
-  .newsletter{
+  .newsletter{margin-bottom: 69px;
     .newsletter-block{
         padding: 36px 65px 34px 66px;
         .newsletter-left{
-            padding-top: 17px;
+            padding-top: 12px;
             margin-right: 41px;
             h1{
                 @include fontsize(32px)
             }
+            .icon-message{
+              margin-top: 4px;
+            }
         }
+    }
+    .newsletter-wrapper{
+      .form-left-content{
+        width: 174px;
+      }
+      .btn{
+        &.two{
+          min-width: 112px;
+          margin-left: 6px;
+        }
+      }
     }
   }
   .contact {
@@ -360,5 +374,8 @@ textarea {
         }
       }
     }
+  }
+  .form-check{
+    padding-top: 5px;
   }
 }
