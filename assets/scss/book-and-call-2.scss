@@ -85,6 +85,9 @@
 @media screen and (min-width: 1200px) {
   .book-and-call-2 {
     margin-bottom: 51px;
+    .container{
+      max-width: 1220px;
+    }
     .image-text-content {
       padding: 64px 0px 71px 64px;
       h2 {
