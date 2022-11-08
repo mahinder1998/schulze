@@ -48,11 +48,10 @@
       background: url(../images/sprite.png) 0 0 no-repeat;
       background-position: -31px -110px;
       width: 16px;
-      height: 15px;
+      height: 18px;
     }
   }
   &.two{
-    // background: url(../images/footer-bg-2.jpg) 0 0 no-repeat;
     background-size: cover;
     &::after{
       display: none;

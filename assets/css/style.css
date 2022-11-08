@@ -11610,7 +11610,7 @@ textarea li {
   background: url(../images/sprite.png) 0 0 no-repeat;
   background-position: -31px -110px;
   width: 16px;
-  height: 15px;
+  height: 18px;
 }
 .footer.two {
   background-size: cover;
@@ -12482,6 +12482,9 @@ textarea {
 @media screen and (min-width: 1200px) {
   .book-and-call-2 {
     margin-bottom: 51px;
+  }
+  .book-and-call-2 .container {
+    max-width: 1220px;
   }
   .book-and-call-2 .image-text-content {
     padding: 64px 0px 71px 64px;
