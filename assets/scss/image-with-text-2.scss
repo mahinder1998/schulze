@@ -217,30 +217,9 @@
         word-spacing: 1px;
         line-height: 1.1;
       }
-      &.small{
-        h2{
-          margin-bottom: 45px;
-          font-weight: $fw-medium;
-        }
-      }
+    
     }
-    &.product-details{
-      margin-bottom: 86px;
-      .image-text-content{
-        h3{
-          margin-top: 16px;
-        }
-        h1{
-          font-size: 37px;
-        }
-      }
-      h1 {
-        @include fontsize(62px);
-        letter-spacing: 4px;
-        word-spacing: -7px;
-        line-height: 1.1;
-      }
-    }
+    
   }
   .slider-for {
     .slide {
@@ -248,5 +227,24 @@
         height: 100%;
       }
     }
+  }
+}
+
+.product-details{
+  @extend .image-with-text-2;
+  margin-bottom: 86px;
+  .image-text-content{
+    h3{
+      margin-top: 16px;
+    }
+    h1{
+      font-size: 37px;
+    }
+  }
+  h1 {
+    @include fontsize(62px);
+    letter-spacing: 4px;
+    word-spacing: -7px;
+    line-height: 1.1;
   }
 }
