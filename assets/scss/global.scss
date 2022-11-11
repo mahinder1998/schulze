@@ -479,6 +479,12 @@ button {
 @media screen and (max-width:767px) {
   .neu-tag{
     transform: scale(.75);
+    top: 0;
+    right: 0;
+    &.left{
+      left: 0;
+      top: 0;
+    }
   }
 }
 .slick-prev {
@@ -651,40 +657,16 @@ a{
 .col-md-6{
   padding: 0 8px !important;
 }
-.form-control,
-textarea {
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid $light-black;
-  padding: 10px 22px;
-  font-weight: 300;
-  outline: 0;
-  background-color: transparent;
-  border-radius: 0;
-  color: $gray;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
-  &:focus {
-    border: 0;
-    border-bottom: 2px solid $red;
-    box-shadow: none;
-    background-color: transparent;
-    color: $gray;
-  }
-}
 textarea {
   resize: none;
   margin-bottom: 20px;
-  border: 2px solid $light-black;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
   &::placeholder {
-    color: $gray;
+    color: $text-color;
   }
   &:focus {
-    border: 2px solid $light-black;
+   border: 0;
+   outline: 0;
+   box-shadow: 0;
   }
   li {
     list-style: none;

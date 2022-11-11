@@ -10636,6 +10636,12 @@ button:focus {
 @media screen and (max-width: 767px) {
   .neu-tag {
     transform: scale(0.75);
+    top: 0;
+    right: 0;
+  }
+  .neu-tag.left {
+    left: 0;
+    top: 0;
   }
 }
 .slick-prev {
@@ -10773,43 +10779,17 @@ a:hover {
   padding: 0 8px !important;
 }
 
-.form-control,
-textarea {
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid #808080;
-  padding: 10px 22px;
-  font-weight: 300;
-  outline: 0;
-  background-color: transparent;
-  border-radius: 0;
-  color: #6e6e6e;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
-}
-.form-control:focus,
-textarea:focus {
-  border: 0;
-  border-bottom: 2px solid #eb1616;
-  box-shadow: none;
-  background-color: transparent;
-  color: #6e6e6e;
-}
-
 textarea {
   resize: none;
   margin-bottom: 20px;
-  border: 2px solid #808080;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
 }
 textarea::placeholder {
-  color: #6e6e6e;
+  color: #262729;
 }
 textarea:focus {
-  border: 2px solid #808080;
+  border: 0;
+  outline: 0;
+  box-shadow: 0;
 }
 textarea li {
   list-style: none;
@@ -12241,12 +12221,14 @@ textarea {
 }
 .newsletter .newsletter-block .newsletter-left {
   display: flex;
+  margin-bottom: 10px;
 }
 .newsletter .newsletter-block .newsletter-left .icon-message {
   background-position: -99px -54px;
   background-size: 300px 300px;
   width: 35px;
   height: 26px;
+  margin-right: 10px;
 }
 .newsletter .newsletter-block .newsletter-left h1, .newsletter .newsletter-block .newsletter-left .h1 {
   font-size: 1.25rem;
