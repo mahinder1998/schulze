@@ -32,9 +32,8 @@
         color: $golden;
       }
     }
-    &.two {
-      .icon-call {
-        background-position: -263px -6px;
+      .icon-mobile {
+        background-position: -261px -6px;
         background-size: 375px 382px;
         width: 27px;
         height: 39px;
@@ -43,8 +42,10 @@
       a{
         color: $white;
         font-weight: $fw-regular;
+        &:hover{
+          color: $golden;
+        }
       }
-    }
   }
   h2 {
     @include fontsize(19px);
@@ -97,17 +98,17 @@
       p {
         margin-bottom: 36px;
       }
-      &.two {
-        padding: 64px 40px 64px 58px;
+      &.two{
+        padding: 64px 0px 55px 64px;
         a {
           font-size: 32px;
-          margin-bottom: 24px;
-        }
       }
+      }
+       
     }
     .blank-wrap {
       .image-wrapper {
-        padding-top: 116px;
+        padding-top: 60px;
         img {
           max-width: 377px;
         }

@@ -76,6 +76,18 @@ $(window).on("load", function () {
       },
     ],
   });
+
+  $(".top-right-slide").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    dots:false,
+    arrows:false,
+   
+  });
+
+ 
   $(".slider-for").slick({
     slidesToShow: 1,
     slidesToScroll: 1,

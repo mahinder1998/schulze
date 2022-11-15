@@ -9,19 +9,29 @@
   }
   .format-listing{
     display: flex;
-    margin: 0 -10px 16px;
-    li{
-        width: calc(33.33% - 20px);
-        margin: 0 10px;
-        text-align: center;
-        img{
-            width: 42px;
-        }
-        h3{
-            @include fontsize(13px);
-        }
-    }
-  }
+   margin: 0 -10px 16px;
+   li{
+       width: calc(33.33% - 20px);
+       margin: 0 10px;
+       text-align: center;
+       a{
+         display: block;
+       }
+       img{
+           width: 42px;
+           filter: brightness(0);
+           transition: .5s;
+       }
+       h3{
+           @include fontsize(13px);
+       }
+       &:hover{
+         img{
+           filter: brightness(1);
+         }
+       }
+   }
+ }
 }
 @media screen and (min-width: 768px){
     .manufacturer-information{

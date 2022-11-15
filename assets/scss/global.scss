@@ -126,7 +126,7 @@ html {
 }
 body {
   line-height: 1.1;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat';
   color: #262729;
   background-color: $body-color;
   @include fontsize(16px);
@@ -136,6 +136,55 @@ body{
     background-color: #18191a;
   }
 }
+
+// fonts
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+      url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light.woff2') format('woff2'),
+      url('../fonts/Montserrat-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+      url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 .container {
   max-width: 1230px;
   margin: 0 auto;
@@ -430,6 +479,12 @@ button {
 @media screen and (max-width:767px) {
   .neu-tag{
     transform: scale(.75);
+    top: 0;
+    right: 0;
+    &.left{
+      left: 0;
+      top: 0;
+    }
   }
 }
 .slick-prev {
@@ -602,40 +657,16 @@ a{
 .col-md-6{
   padding: 0 8px !important;
 }
-.form-control,
-textarea {
-  width: 100%;
-  border: 0;
-  border-bottom: 2px solid $light-black;
-  padding: 10px 22px;
-  font-weight: 300;
-  outline: 0;
-  background-color: transparent;
-  border-radius: 0;
-  color: $gray;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
-  &:focus {
-    border: 0;
-    border-bottom: 2px solid $red;
-    box-shadow: none;
-    background-color: transparent;
-    color: $gray;
-  }
-}
 textarea {
   resize: none;
   margin-bottom: 20px;
-  border: 2px solid $light-black;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-  font-style: normal;
   &::placeholder {
-    color: $gray;
+    color: $text-color;
   }
   &:focus {
-    border: 2px solid $light-black;
+   border: 0;
+   outline: 0;
+   box-shadow: 0;
   }
   li {
     list-style: none;
@@ -772,6 +803,9 @@ textarea {
       z-index: -1;
     }
   }
+}
+.highligted{
+  color:$golden;
 }
 body {
   // background: url(../images/8.jpg) center top;

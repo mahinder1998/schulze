@@ -114,11 +114,13 @@ textarea {
     padding: 15px;
     .newsletter-left {
       display: flex;
+      margin-bottom: 10px;
       .icon-message {
         background-position: -99px -54px;
         background-size: 300px 300px;
         width: 35px;
         height: 26px;
+        margin-right: 10px
       }
       h1 {
         @include fontsize(20px);
@@ -358,7 +360,7 @@ textarea {
             margin-right: 15px;
           }
           .form-check-label {
-            padding-top: 8px;
+            padding-top: 7px;
           }
         }
       }

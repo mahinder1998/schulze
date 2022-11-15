@@ -1,3 +1,10 @@
+.back-link{
+  font-weight: $fw-medium;
+  color: $color-black;
+  margin-bottom: 20px;
+  display: block;
+  @include fontsize(19px);
+}
 .image-with-text-2 {
   margin-bottom: 16px;
   z-index: 1;
@@ -9,7 +16,8 @@
     h2,
     p {
       color: $white;
-    }
+    } 
+    
     h1 {
       line-height: 1.2;
       margin-bottom: 18px;
@@ -157,9 +165,6 @@
   .slider-nav {
     margin: 0 8px 58px;
     padding: 0px 60px;
-    .slick-track{
-      // display: flex;
-    }
     .slick-slide {
       margin: 0 5px;
       border: 2px solid transparent;
@@ -181,6 +186,9 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .back-link{
+    margin-bottom: 48px;
+  }
   .image-with-text-2 {
     margin-bottom: 49px;
     .container {
@@ -217,30 +225,9 @@
         word-spacing: 1px;
         line-height: 1.1;
       }
-      &.small{
-        h2{
-          margin-bottom: 45px;
-          font-weight: $fw-medium;
-        }
-      }
+    
     }
-    &.product-details{
-      margin-bottom: 86px;
-      .image-text-content{
-        h3{
-          margin-top: 16px;
-        }
-        h1{
-          font-size: 37px;
-        }
-      }
-      h1 {
-        @include fontsize(62px);
-        letter-spacing: 4px;
-        word-spacing: -7px;
-        line-height: 1.1;
-      }
-    }
+    
   }
   .slider-for {
     .slide {
@@ -248,5 +235,24 @@
         height: 100%;
       }
     }
+  }
+}
+
+.product-details{
+  @extend .image-with-text-2;
+  margin-bottom: 86px;
+  .image-text-content{
+    h3{
+      margin-top: 16px;
+    }
+    h1{
+      font-size: 37px;
+    }
+  }
+  h1 {
+    @include fontsize(62px);
+    letter-spacing: 4px;
+    word-spacing: -7px;
+    line-height: 1.1;
   }
 }

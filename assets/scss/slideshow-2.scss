@@ -1,73 +1,32 @@
-.slideshow-3 {
-  @extend .image-with-text-2;
+.slideshow-2 {
   z-index: 2;
   position: relative;
   margin-bottom: 16px;
-  .slick-track{
-    height: 100%;
-  }
   .slick-slide {
-    height: 100%;
-    >div{
-      height: 100%;
-    }
     img {
       border-radius: 15px 15px 0 0;
     }
-    .image-wrapper{
-      height: 100%;
-      img{
-        height:100%;
+  }
+  &.wide-image{
+      img {
+        border-radius: 0;
       }
-    }
-  }
-  .right-block{
-    height: 100%;
-    background-color: $text-color;
-    img{
-      width: 100%;
-      display: block;
-    }
-  }
-  .left-block{
-    background: transparent !important;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .slideshow-3 {
-    .slick-list{
-      height: 100%;
-      background-color: $text-color;
-    }
+  .slideshow-2 {
     .slideshow-img {
       border-radius: 8px 8px 0 0;
       img {
         display: block;
       }
     }
-    .left-block{
-      width: 50%;
-      background-color: transparent!important;
-      padding-bottom: 0!important;
-    }
-    .right-block{
-      width: 50%;
-      height: 100%;
-      img{
-        border-radius: 0;
-      }
-    }
-    .slick-slide{
-      img{
-        border-radius: 0px 20px 0 0;
-      }
-    }
   }
 }
 
 @media screen and (min-width: 992px) {
-  .slideshow-3 {
+  .slideshow-2 {
     margin-bottom: 48px;
     .container {
       padding: 0;
@@ -84,7 +43,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .slideshow-3 {
+  .slideshow-2 {
     margin-bottom: 47px !important;
     .container {
       position: relative;
