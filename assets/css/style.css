@@ -11466,11 +11466,18 @@ textarea li {
 .slideshow-3 .left-block {
   background: transparent !important;
 }
+.slideshow-3 .image-text-content {
+  background-color: #000000 !important;
+}
 
 @media screen and (min-width: 768px) {
+  .slideshow-3 .container {
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+  }
   .slideshow-3 .slick-list {
     height: 100%;
-    background-color: #262729;
+    background-color: #000000;
   }
   .slideshow-3 .slideshow-img {
     border-radius: 8px 8px 0 0;

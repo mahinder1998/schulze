@@ -32,13 +32,20 @@
   .left-block{
     background: transparent !important;
   }
+  .image-text-content{
+    background-color: $color-black !important;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .slideshow-3 {
+    .container{
+      border-radius: 20px 20px 0 0;
+      overflow: hidden;
+    }
     .slick-list{
       height: 100%;
-      background-color: $text-color;
+      background-color: $color-black;
     }
     .slideshow-img {
       border-radius: 8px 8px 0 0;
